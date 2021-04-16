@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- <web-app> represents the whole application. -->
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
-	<display-name>ServletInterface</display-name>
+	
+	<display-name>MethodsToCreateServlet</display-name>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 	
-	<!-- Servlet Declaration -->
-	<!-- <servlet> is sub element of <web-app> and represents the servlet. -->
 	<servlet>
-		<!-- represents the servlet name -->
 		<servlet-name>first</servlet-name>
-		<!-- represents the class of the servlet -->
 		<servlet-class>com.servlet.FirstServlet</servlet-class>
 	</servlet>
 	
-	<!-- It is used to map the servlet -->
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>com.servlet.GenericServletClass</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>first</servlet-name>
-		<!-- This pattern is used at client side to invoke the servlet -->
-		<url-pattern>/home</url-pattern>
+		<url-pattern>/first</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/genericServlet</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
+
