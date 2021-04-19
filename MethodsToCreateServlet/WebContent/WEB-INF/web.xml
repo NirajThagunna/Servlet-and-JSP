@@ -20,6 +20,11 @@
 		<servlet-class>com.servlet.GenericServletClass</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>third</servlet-name>
+		<servlet-class>com.servlet.HttpServletClass</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>first</servlet-name>
 		<url-pattern>/first</url-pattern>
@@ -28,6 +33,11 @@
 	<servlet-mapping>
 		<servlet-name>second</servlet-name>
 		<url-pattern>/genericServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>third</servlet-name>
+		<url-pattern>/httpServlet</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
