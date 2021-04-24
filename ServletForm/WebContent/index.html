@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet Form</title>
+</head>
+<body>
+
+	<h1>Servlet Form</h1>
+
+	<form action="registerForm" method="post">
+
+		<p>
+			Enter your name : <input type="text" name="user_name"
+				placeholder="Enter your name" />
+		</p>
+		<p>
+			Enter your email : <input type="email" name="user_email"
+				placeholder="Enter your email" />
+		</p>
+		<p>
+			Enter your phone number : <input type="text" name="user_number"
+				placeholder="Enter your number" />
+		</p>
+		<p>
+			Gender : <input type="radio" name="user_gender" value="Male" /> Male
+			&nbsp;<input type="radio" name="user_gender" value="Female" />Female
+		</p>
+		<p>
+			Choose a Course : <select name="user_course">
+				<option value="Java">Java</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="Python">Python</option>
+				<option value="React.js">React.js</option>
+			</select>
+		</p>
+
+		<p>
+			<input type="checkbox" value="Checked" name="condition" /> Agree
+			terms and conditions
+		</p>
+
+		<p>
+			<input type="submit" value="Register" /> &nbsp; <input type="reset"
+				value="Reset" />
+		</p>
+
+	</form>
+
+</body>
+</html>
