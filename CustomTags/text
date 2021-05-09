@@ -1,0 +1,13 @@
+Methods to create a Custom tag :
+
+	1) Create a Tag Handler Class File
+		-> Tag interface and TagSupport
+		-> Tag interface is the main interface that have all the methods implemented 
+		to create a Custom tag.
+		-> TagSupport is an abstract class that have some specific method implemented 
+		and TagSupport can extends Tag Interface
+		
+	2) Create a TLD(Tag Lib Descriptor) file
+		-> It contains all the information about your tags.
+		-> Which custom tags are built that take care TLD file.
+		-> Make a TLD file inside the WEB-INF folder
