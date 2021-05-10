@@ -34,9 +34,9 @@ public class SendRedirect extends HttpServlet {
 		String name = req.getParameter("searchItem");
 		
 		// sendRedirect()
-//		resp.sendRedirect("https://www.google.co.in/#q=" + name);
+		resp.sendRedirect("https://www.google.co.in/#q=" + name);
 		
-		resp.sendRedirect("home.html");
+//		resp.sendRedirect("home.html");
 		
 		out.close();
 	}
