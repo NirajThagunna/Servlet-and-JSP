@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class LoginServlet extends HttpServlet {
+public class MyServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -27,8 +27,9 @@ public class LoginServlet extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter();
 
-		out.println("Login Servlet...");
+		out.println("My Servlet...");
 
 		out.close();
 	}
+
 }
